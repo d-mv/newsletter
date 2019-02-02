@@ -11,15 +11,14 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 ## Screenshots
 
 ![Main view][main]
-Main view
+
 ![Mobile view][mobile]
-Mobile view
+
 ![Article view][article]
-Article view
+
 ![List of sources][list]
-List of sources
+
 ![Add source][add]
-Add source
 
 ## How?
 
