@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Newsletter | Add a New Source</title>
+  <title>Newsletter | Sources</title>
   <!-- links -->
   <link rel="stylesheet" href="css/style.css">
   <!-- imports -->
@@ -28,33 +28,17 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
         <!-- form start -->
-        <div class='text text-h2'>Add a new source:</div>
+        <div class='text-center text text-h2'>Sources</div>
         <p></p>
-        <form>
-          <!-- source -->
-          <div class="row">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="source_name" class='text text-article'>Source name</label>
-                <input type="text" class="form-control text text-h6-forms" id="source_name" aria-describedby="source_name"
-                       placeholder="Source">
-              </div>
-            </div>
-          </div>
-          <!-- URL -->
-          <div class="row">
-            <div class="col-12">
-              <div class="form-group">
-                <label for="source_url" class='text text-article'>URL</label>
-                <input type="text" class="form-control text text-h6-forms" id="source_url" aria-describedby="source_url"
-                       placeholder="https://www.blog.com">
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-dark text text-article">Add source</button>
-          <a href="javascript: history.go(-1)" class="btn btn-light text text-article ml-2">Cancel</a>
-
-        </form>
+        <div class="button-space">
+          <a href="add_source.html" class="btn btn-dark text text-article">Add Source</a>
+        </div>
+        <div class="button-space">
+          <a href="list_sources.html" class="btn btn-dark text text-article">Manage Sources</a>
+        </div>
+        <div class="button-space">
+          <a href="/" class="btn btn-light text text-article">Cancel</a>
+        </div>
       </div>
       <!-- form end -->
     </div>

@@ -17,9 +17,9 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body id='top'>
   <!-- header -->
-  <div class='newsletter-head' id='top'>
+  <div class='newsletter-head'>
     <div class='text text-h1 page-title'><a href='/' class='title-link' title='back to homepage'>Newsletter</a></div>
     <div class='text text-h6' id='todayNow'></div>
   </div>
@@ -179,11 +179,23 @@
     </div>
   </div>
   <!-- float menu -->
-  <div class='float-menu'><a href="#top" class='float-menu-link'><i class="fas fa-angle-up"></i></a></div>
-  <!-- footer -->
-  <!-- <div class="newsletter-footer hidden-xs hidden-sm hidden-lg hidden-md hidden-xl">
-    well-well-well
-  </div> -->
+  <button type="button" class="float-menu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-angle-up"></i>
+  </button>
+  <div class="dropdown-menu">
+    <ul class='float-links'>
+      <li class='float-link'><a href="#top" class='float-a'>
+          <div class='button text text-p'>Up</div>
+        </a></li>
+      <div class="dropdown-divider"></div>
+      <li class='float-link text text-p'><a href="/" class='float-a'>
+          <div class='button text text-p'>Home</div>
+        </a></li>
+      <li class='float-link'><a href="sources.html" class='float-a'>
+          <div class='button text text-p'>Sources</div>
+        </a></li>
+    </ul>
+  </div>
   <!-- scripts -->
   <script>
     document.getElementById("todayNow").innerHTML = currentTimestamp();
@@ -209,7 +221,12 @@
         minutes + ampm;
     }
   </script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+          crossorigin="anonymous"></script>
 </body>
 
 </html>

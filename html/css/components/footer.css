@@ -7,40 +7,36 @@
   padding: 0;
 }
 
-
-.list-links {}
-
 @media (min-width: 0px) {
   #nl-footer {
-    position: inline;
+    display: none;
   }
 }
-
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 #nl-footer {
-  position: inline;
+  display: none;
 }
 }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 #nl-footer {
-  position: fixed;
+  display: none;
 }
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 #nl-footer {
-  position: fixed;
+  display: none;
 }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 #nl-footer {
-  position: fixed;
+  display: none;
 }
 }
