@@ -1,0 +1,22 @@
+.float-menu {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  font-size: 36pt;
+  line-height: 20px;
+}
+
+.float-menu-link {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.float-menu-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.float-menu-link:visited {
+  color: rgba(0, 0, 0, 0.2);
+}

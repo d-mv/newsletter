@@ -1,0 +1,46 @@
+.newsletter-footer {
+  border: 1px solid red;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+}
+
+
+.list-links {}
+
+@media (min-width: 0px) {
+  #nl-footer {
+    position: inline;
+  }
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+#nl-footer {
+  position: inline;
+}
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+#nl-footer {
+  position: fixed;
+}
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+#nl-footer {
+  position: fixed;
+}
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+#nl-footer {
+  position: fixed;
+}
+}
