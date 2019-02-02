@@ -8,6 +8,19 @@ A web app to collect the articles from the predefined list of sources, including
 
 Plenty of news readers, very colorful & heavy. Though most of them support 'reading mode' none of them are focus on plain text information.
 
+## Screenshots
+
+![Main view][main]
+Main view
+![Mobile view][mobile]
+Mobile view
+![Article view][article]
+Article view
+![List of sources][list]
+List of sources
+![Add source][add]
+Add source
+
 ## How?
 
 1. ~~HTML template~~
@@ -19,8 +32,8 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 
 ...
 
-[add]: www "Add source"
-[article]: www "Article view"
-[list]: www "List of sources"
-[main]: www "Main view"
-[mobile]: www "Mobile view"
+[add]: https://github.com/d-mv/newsletter/raw/master/screenshots/add.png "Add source screenshot"
+[article]: https://github.com/d-mv/newsletter/raw/master/screenshots/article.png "Article view screenshot"
+[list]: https://github.com/d-mv/newsletter/raw/master/screenshots/list.png "List of sources screenshot"
+[main]: https://github.com/d-mv/newsletter/raw/master/screenshots/main.png "Main view screenshot"
+[mobile]: https://github.com/d-mv/newsletter/raw/master/screenshots/mobile.png "Mobile view screenshot"
