@@ -25,13 +25,13 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 ## How?
 
 1. ~~HTML template~~
-2. Ruby + Sinatra + SQLite3 DB
+2. Hanami + SQLite3 DB (in process)
 3. Working on bugs + setting v2 options
 4. v2
 
 ## When?
 
-...
+Jan 3 - Hanami init + (header, float menu)
 
 [add]: https://github.com/d-mv/newsletter/raw/master/screenshots/add.png 'Add source screenshot'
 [article]: https://github.com/d-mv/newsletter/raw/master/screenshots/article.png 'Article view screenshot'

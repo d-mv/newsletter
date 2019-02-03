@@ -1,0 +1,30 @@
+.newsletter-head {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 20px 20px 20px;
+  border-bottom: 1px solid grey;
+}
+
+.page-title {
+  margin-bottom: -25px;
+  height: 47px;
+}
+
+.title-link {
+  color: black;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.title-link:visited {
+  color: black;
+  text-decoration: none;
+}

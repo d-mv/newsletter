@@ -1,0 +1,42 @@
+.sources-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.source-list-item {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid #a3a3a3;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.line-one {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.source-link {
+  background-image: linear-gradient(90deg, #a8a8a8 0%, #a8a8a8 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  background-position: 0 88%;
+  transition: background-size 0.5s ease-in;
+  color: black;
+}
+
+.source-link:hover {
+  background-size: 100% 30%;
+  text-decoration: none;
+  color: black;
+}
+
+.source-link:visited {
+  text-decoration: none;
+  color: black;
+}

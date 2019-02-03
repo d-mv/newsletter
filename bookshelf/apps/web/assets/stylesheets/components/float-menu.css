@@ -1,0 +1,125 @@
+.float-menu {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: none;
+  color: rgba(0, 0, 0, 0.2);
+  padding-right: 20px;
+}
+
+.float-menu-button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 36pt;
+}
+
+.button {
+  padding: 15px 20px;
+}
+
+/* * Define for different layouts  */
+
+/* Smallest devices */
+@media (min-width: 0px) {
+  .float-menu {
+    bottom: 10px;
+    right: -85vw;
+    width: 100vw;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .float-menu {
+    bottom: 10px;
+    right: -90vw;
+    width: 100vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .float-menu {
+    bottom: 15px;
+    right: -40vw;
+    width: 50vw;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .float-menu:hover,
+  .float-menu:active {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .float-menu {
+    bottom: 10px;
+    right: -44vw;
+    width: 50vw;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .float-menu:hover,
+  .float-menu:active {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .float-menu {
+    bottom: 15px;
+    right: -25vw;
+    width: 30vw;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .float-menu:hover,
+  .float-menu:active {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.float-a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+a .button {
+  background-image: linear-gradient(90deg, #e2e2e2 0%, #e2e2e2 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  background-position: 0 88%;
+  transition: background-size 0.5s ease-in;
+  color: black;
+}
+
+
+
+/*  dynamics */
+
+.float-menu:hover,
+.float-menu:active {
+  right: 0;
+  transition-duration: 0.5s;
+  background-color: rgb(188, 188, 188);
+}
+
+.float-a:hover {
+  text-decoration: none;
+}
+
+a .button:hover {
+  background-size: 100% 100%;
+  text-decoration: none;
+  color: black;
+}

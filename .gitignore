@@ -23,3 +23,9 @@ yarn-error.log*
 
 # Other special folders
 .vagrant
+
+# Hanami
+/db/*.sqlite
+/public/assets*
+/tmp
+
