@@ -12,6 +12,8 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 
 ![Main view][main]
 
+![Float menu][float]
+
 ![Mobile view][mobile]
 
 ![Article view][article]
@@ -31,8 +33,9 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 
 ...
 
-[add]: https://github.com/d-mv/newsletter/raw/master/screenshots/add.png "Add source screenshot"
-[article]: https://github.com/d-mv/newsletter/raw/master/screenshots/article.png "Article view screenshot"
-[list]: https://github.com/d-mv/newsletter/raw/master/screenshots/list.png "List of sources screenshot"
-[main]: https://github.com/d-mv/newsletter/raw/master/screenshots/main.png "Main view screenshot"
-[mobile]: https://github.com/d-mv/newsletter/raw/master/screenshots/mobile.png "Mobile view screenshot"
+[add]: https://github.com/d-mv/newsletter/raw/master/screenshots/add.png 'Add source screenshot'
+[article]: https://github.com/d-mv/newsletter/raw/master/screenshots/article.png 'Article view screenshot'
+[float]: https://github.com/d-mv/newsletter/raw/master/screenshots/float.png 'Float menu screenshot'
+[list]: https://github.com/d-mv/newsletter/raw/master/screenshots/list.png 'List of sources screenshot'
+[main]: https://github.com/d-mv/newsletter/raw/master/screenshots/main.png 'Main view screenshot'
+[mobile]: https://github.com/d-mv/newsletter/raw/master/screenshots/mobile.png 'Mobile view screenshot'
