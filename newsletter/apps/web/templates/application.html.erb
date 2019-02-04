@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= favicon %>
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/favicon-180-precomposed.png">
+    <link rel="manifest" href="../assets/favicons/manifest.json">
+    <link rel="icon" sizes="192x192" href="../assets/favicons/favicon-192.png">
+    <!-- meta setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Newsletter</title>
+    <!-- links -->
+    <%= stylesheet 'style', 'utility', 'typography', 'list', 'header', 'footer', 'float-menu', 'card','article' %>
+    <!-- imports -->
+    <%= stylesheet 'https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700&amp;subset=latin-ext' %>
+    <%= stylesheet 'https://use.fontawesome.com/releases/v5.7.0/css/all.css' %>
+    <%= stylesheet 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' %>
+  </head>
+  <body>
+    <!-- header -->
+    <div class='newsletter-head'>
+      <div class='text text-h1 page-title'>The Newsletter</div>
+      <div class='text text-h6' id='todayNow'></div>
+    </div>
+    <!-- content -->
+    <%= yield %>
+    <!-- float menu -->
+    <div class="float-menu">
+      <div class="float-menu-button">
+        <i class="fas fa-angle-left"></i></div>
+      <a href="#top" class='float-a'>
+        <div class='button text text-p'>Up</div>
+      </a>
+      <a href="/" class='float-a'>
+        <div class='button text text-p'>Home</div>
+      </a>
+      <a href="sources" class='float-a'>
+        <div class='button text text-p'>Sources</div>
+      </a>
+    </div>
+    <!-- scripts -->
+    <%# <%= javascript 'https://code.jquery.com/jquery-2.1.4.min.js', 'application' %>
+    <%= javascript 'date' %>
+    <script></script>
+  </body>
+</html>
