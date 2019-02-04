@@ -1,7 +1,7 @@
 module Web
   module Controllers
-    module Home
-      class Sources
+    module Sources
+      class New
         include Web::Action
 
         def call(params)

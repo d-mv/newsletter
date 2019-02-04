@@ -1,6 +1,6 @@
 module Web
   module Views
-    module Home
+    module Sources
       class List
         include Web::View
       end

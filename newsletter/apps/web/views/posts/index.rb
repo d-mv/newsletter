@@ -1,7 +1,7 @@
 module Web
   module Views
-    module Home
-      class Sources
+    module Posts
+      class Index
         include Web::View
       end
     end

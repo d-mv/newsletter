@@ -9,6 +9,9 @@ root to: 'home#index'
 get '/', to: 'home#index'
 
 
-get '/sources', to: 'home#sources'
-get '/add', to: 'home#add'
-get '/list', to: 'home#list'
+get '/sources/list', to: 'sources#list'
+get '/sources', to: 'sources#index'
+get '/posts', to: 'posts#index'
+get '/sources/new', to: 'sources#new'
+post '/sources', to: 'sources#create'
+post '/sources', to: 'sources#create'

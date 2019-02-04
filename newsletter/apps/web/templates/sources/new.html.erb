@@ -1,0 +1,32 @@
+<!-- content -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+      <div class='text text-h2'>Add a new source:</div>
+      <p></p>
+      <!-- form start -->
+      <%= form_for :source, '/sources' do
+        div class: 'row' do
+          div class:"col-12" do
+            div class:"form-group" do
+              label      :name, class: 'text text-article'
+              text_field :name, class: 'form-control text text-h6-forms'
+            end
+          end
+        end
+        div class: 'row' do
+          div class:"col-12" do
+            div class:"form-group" do
+              label      :url, class: 'text text-article'
+              text_field :url, class: 'form-control text text-h6-forms'
+            end
+          end
+        end
+        submit 'Create', class: 'btn btn-light text text-article ml-2'
+      end
+      %>
+      <!-- form end -->
+    </div>
+
+  </div>
+</div>

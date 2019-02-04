@@ -1,7 +1,7 @@
 module Web
   module Controllers
-    module Home
-      class Add
+    module Posts
+      class Index
         include Web::Action
 
         def call(params)

@@ -1,7 +1,7 @@
 module Web
   module Views
-    module Home
-      class Add
+    module Sources
+      class New
         include Web::View
       end
     end
