@@ -4,10 +4,10 @@ Hanami::Model.migration do
       primary_key :id
       foreign_key :source_id, :sources, on_delete: :cascade, null: false
 
-      column :title, String, null: false, unique: true, size: 100
-      column :text, String, null: false, unique: true
-      column :url, String, null: false, unique: true
-      column :author, String, null: false, unique: true
+      column :title, String, null: false
+      column :text, String, null: false
+      column :url, String, null: false
+      column :author, String, null: false
       column :star, TrueClass, null: false, default: false
       column :published, DateTime, null: false
       column :words, Integer, null: false

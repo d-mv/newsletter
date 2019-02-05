@@ -1,15 +1,11 @@
 module Web
   module Controllers
-    module Home
-      class Index
+    module Posts
+      class Article
         include Web::Action
 
-        expose :posts
-
         def call(params)
-          @posts = PostRepository.new.all
         end
-
       end
     end
   end

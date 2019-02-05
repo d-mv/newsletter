@@ -9,3 +9,7 @@
   border-bottom: 1px solid #a3a3a3;
   margin: 0 30px;
 }
+
+.display-inb{
+  display: inline-block;
+}

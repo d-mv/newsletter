@@ -32,6 +32,7 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 ## When?
 
 Feb 3 - Hanami init + (header, float menu)
+Feb 5 - Add new sources, parse (Medium only), show in the front
 
 [add]: https://github.com/d-mv/newsletter/raw/master/screenshots/add.png 'Add source screenshot'
 [article]: https://github.com/d-mv/newsletter/raw/master/screenshots/article.png 'Article view screenshot'
