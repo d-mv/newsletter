@@ -1,7 +1,7 @@
 module Web
   module Views
     module Posts
-      class Article
+      class Post
         include Web::View
       end
     end

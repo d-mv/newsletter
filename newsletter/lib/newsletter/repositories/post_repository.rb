@@ -2,7 +2,12 @@
 
 require 'pry-byebug'
 class PostRepository < Hanami::Repository
+  associations do
+    belongs_to :source
+    has_one :source
+  end
 
+  
   # launch the posts fetching
   def fill
     @sources = SourceRepository.new.all
@@ -22,6 +27,12 @@ class PostRepository < Hanami::Repository
       end
     end
     # binding.pry
+  end
+
+  # private
+
+  def post_of(post, id)
+    assoc(:sources, post)
   end
 
 end

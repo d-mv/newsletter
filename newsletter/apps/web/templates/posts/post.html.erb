@@ -1,0 +1,30 @@
+<!-- content -->
+<div class="container">
+  <div class="row">
+    <!-- article start-->
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 article-full">
+      <div class="article-body">
+        <div class="article-title">
+          <div class='text text-h2'><%= post.title %></div>
+        </div>
+        <div class="article-source-full">
+          <div class='text text-h5'><%= source %></div>
+          <div class="text text-h5">by <%= post.author %></div>
+          <div class='text text-h5'><%= post.published %></div>
+          <!-- star -->
+          <a href="" class="star"> <i class="fas fa-star"></i></a>
+        </div>
+        <div class='text text-article full-text'>
+          <%# text-start %>
+          <%= post.text %>
+          <%# text-end %>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="article-footer-full">
+        <div class="text text-h4">-page-</div>
+        <div class="text text-h4">-published-</div>
+        <div class="text text-h4"><%= post.words %> words</div>
+      </div>
+    </div>
+    <!-- article-end -->
