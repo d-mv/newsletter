@@ -13,6 +13,8 @@ group :development do
   gem 'hanami-webconsole'
   gem 'nokogiri'
   gem 'pry-byebug'
+  gem 'faraday'
+  gem 'eat'
 end
 
 group :test, :development do

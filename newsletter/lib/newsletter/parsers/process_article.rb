@@ -13,9 +13,11 @@ class ProcessArticle
     author = art_raw.children.at('meta[@property="author"]')['content']
     published = art_raw.children.at('meta[@property="article:published_time"]')['content']
     text = art_raw.xpath('//p').text
-    words = art_raw.xpath('//p').text.length
+    words = art_raw.xpath('//p').text.split(' ').length
+    # binding.pry
     # brief = art_raw.xpath('//p').text[0..1000]
-    # uid = "#{published}#{title}"
-    { title: title, url: url, author: author, published: published, text: text, words: words}
+    uid = "#{published}-#{title}"
+    puts url
+    { title: title, url: url, author: author, published: published, text: text, words: words, uid: uid}
   end
 end

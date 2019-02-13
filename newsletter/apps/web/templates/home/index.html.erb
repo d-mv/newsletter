@@ -1,20 +1,21 @@
 <!-- content -->
 <div class="container-fluid">
   <div class="row pb-3">
-    <% posts = PostRepository.new.all %>
+
     <!-- article start-->
     <% posts.each do |p| %>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 article">
         <div class="article-body">
           <div class="article-title">
-            <div class='text text-h2'><a href='article.html' class='article-link'><%= p.title %></a></div>
+            <div class='text text-h2'><a href='/post/<%= p.id %>' class='article-link'><%= p.title %></a></div>
           </div>
           <div class="article-source">
-            <div class='text text-h5'>-source-</div>
-            <a href="" class="star"><i class="fas fa-star"></i></a>
+            <div class='text text-h5'><%= sources.find(p.source_id).name %></div>
+            <a href='posts/destroy/<%= p.id%>' class='star'><i class="far fa-trash-alt"></i></a>
+            <a href='posts/star/<%= p.id%>' class=<%= p.star ? 'star-on' : 'star' %>><i class="fas fa-star"></i></a>
           </div>
           <div class="article-brief">
-            <div class='text text-p'><a href='/post/<%= p.id %>' class='article-link'><%= p.text[0..1000] %></a></div>
+            <div class='text text-p'><a href='/post/<%= p.id %>' class='article-link'><%= p.text[0..1000] %>...</a></div>
           </div>
         </div>
         <div class="article-footer">

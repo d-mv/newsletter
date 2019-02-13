@@ -1,38 +1,42 @@
 # frozen_string_literal: true
 
-require 'pry-byebug'
+# require 'pry-byebug'
 class PostRepository < Hanami::Repository
   associations do
     belongs_to :source
     has_one :source
   end
 
-  
-  # launch the posts fetching
-  def fill
-    @sources = SourceRepository.new.all
-    get_the_posts unless @sources.nil?
-    # binding.pry
-  end
-
-  # fill the db with posts
-  def get_the_posts
-    @posts = PostRepository.new
-    @sources.each do |el|
-      parsing = Parse.new(el.url)
-      articles = parsing.collect_articles
-      articles.each do |art|
-        art[:source_id] = el.id
-        @posts.create(art)
-      end
-    end
-    # binding.pry
-  end
-
-  # private
-
-  def post_of(post, id)
+  def post_of(post, _id)
     assoc(:sources, post)
   end
 
+  def active_posts
+    posts.where(status: true)
+  end
+
+  def find_by_uid(uid)
+    posts.where(uid: uid)
+    # binding.pry
+    # end
+  end
+
+  def sorted_new
+    posts.where(status: true).order { published.desc }
+  end
+
+  def destroy(id)
+    posts = PostRepository.new
+    post = posts.update(id, title: '', text: '', url: '', author: '', star: false, words: '', status: false)
+  end
+
+  def star(id)
+    posts = PostRepository.new
+    # binding.pry
+    post = if posts.find(id).star
+             posts.update(id, star: false)
+           else
+             posts.update(id, star: true)
+           end
+  end
 end

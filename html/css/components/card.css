@@ -44,15 +44,21 @@
   color: rgba(0, 0, 0, 0.2);
 }
 
-.star-on {
+/* .star-on {
   color: rgba(186, 93, 93, 0.8);
+} */
+.star-on {
+  color: rgba(0,0,0,1);
 }
+
 
 .star-on:hover {
-  color: rgb(183, 20, 20);
-
+  color: rgba(183, 20, 20,1);
 }
 
-.star-on:visited {
+/* .star-on:visited {
   color: rgba(186, 93, 93, 0.8);
+} */
+.star-on:visited {
+  color: rgba(0,0,0,1);
 }

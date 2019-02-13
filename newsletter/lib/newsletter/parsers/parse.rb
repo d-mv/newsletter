@@ -9,23 +9,29 @@ class Parse
   def initialize(url)
     @url = url
     # auto fetch once started
-    fetch
+
   end
 
   def fetch
     # binding.pry
     return false if @url == ''
-
+    # binding.pry
     @raw_html = Nokogiri::HTML(open(@url).read)
+    # binding.pry
   end
 
   def collect_articles
     # select which method is going to process
+    # binding.pry
+    puts "Starting collecting..."
+    fetch
     method = 'parse_medium' unless @url.match('medium.').nil?
-    # make array and process items
     array = []
+
     @raw_html.xpath('//item').each do |el|
+      # binding.pry
       process = ProcessArticle.new
+
       result = process.send method, el
       array << result
     end

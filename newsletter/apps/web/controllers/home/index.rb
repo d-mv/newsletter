@@ -5,9 +5,12 @@ module Web
         include Web::Action
 
         expose :posts
+        expose :sources
 
-        def call(params)
-          @posts = PostRepository.new.all
+        def call(_params)
+          @posts = PostRepository.new.sorted_new
+          @sources = SourceRepository.new
+          # pry-byebug
         end
 
       end

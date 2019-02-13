@@ -60,7 +60,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .float-menu {
-    bottom: 10px;
+    top: 60px;
     right: -44vw;
     width: 50vw;
     border-radius: 5px 0 0 5px;
