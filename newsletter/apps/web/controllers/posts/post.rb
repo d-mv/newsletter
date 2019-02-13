@@ -14,7 +14,7 @@ module Web
           posts = PostRepository.new
           sources = SourceRepository.new
           @post = posts.find(params[:id].to_i)
-          @source = sources.find(@post.source_id).name
+          @source = sources.find(@post.source_id)
         end
       end
     end

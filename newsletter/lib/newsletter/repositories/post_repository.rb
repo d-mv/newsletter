@@ -39,4 +39,8 @@ class PostRepository < Hanami::Repository
              posts.update(id, star: true)
            end
   end
+
+  def find_by_source(sid)
+    posts.where(status: true, source_id: sid).order { published.desc }
+  end
 end

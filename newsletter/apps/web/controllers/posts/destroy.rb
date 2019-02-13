@@ -8,7 +8,7 @@ module Web
           posts = PostRepository.new
           # byebug
           posts.destroy(params[:id])
-          redirect_to '/'
+          redirect_to request.get_header("HTTP_REFERER") || '/'
         end
       end
     end

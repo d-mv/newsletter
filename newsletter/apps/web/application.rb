@@ -237,7 +237,6 @@ module Web
         manifest-src 'self';
         font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com
       }
-
       ##
       # FRAMEWORKS
       #

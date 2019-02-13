@@ -1,4 +1,4 @@
-.button-space{
+.button-space {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -10,6 +10,10 @@
   margin: 0 30px;
 }
 
-.display-inb{
+.display-inb {
   display: inline-block;
+}
+
+.pl15 {
+  padding-left: 15pt;
 }

@@ -1,5 +1,10 @@
 <!-- content -->
+<%= puts "hi from view - #{posts}" %>
 <div class="container-fluid">
+<div class='row mb-2'>
+<div class='text text-h3 pl15'>
+from <%= source.name%>:</div>
+</div>
   <div class="row pb-3">
     <!-- article start-->
     <% posts.each do |p| %>
@@ -9,9 +14,9 @@
             <div class='text text-h2'><a href='/post/<%= p.id %>' class='article-link'><%= p.title %></a></div>
           </div>
           <div class="article-source">
-            <a href='/sources/<%=p.source_id%>/posts' class='article-link'><span class='text text-h5'> <%= sources.find(p.source_id).name %><span></span></a>
-            <a href='posts/destroy/<%= p.id%>' class='star'><i class="far fa-trash-alt"></i></a>
-            <a href='posts/star/<%= p.id%>' class=<%= p.star ? 'star-on' : 'star' %>><i class="fas fa-star"></i></a>
+            <div class='text text-h5'><%= source.name %></div>
+            <a href='/posts/destroy/<%= p.id%>' class='star'><i class="far fa-trash-alt"></i></a>
+            <a href='/posts/star/<%= p.id%>' class=<%= p.star ? 'star-on' : 'star' %>><i class="fas fa-star"></i></a>
           </div>
           <div class="article-brief">
             <div class='text text-p'><a href='/post/<%= p.id %>' class='article-link'><%= p.text[0..1000] %>...</a></div>
