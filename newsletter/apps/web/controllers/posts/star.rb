@@ -6,9 +6,8 @@ module Web
 
         def call(params)
           posts = PostRepository.new
-          # byebug
           posts.star(params[:id])
-          redirect_to '/'
+          redirect_to request.get_header("HTTP_REFERER") || '/'
         end
       end
     end

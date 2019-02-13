@@ -10,14 +10,11 @@
         <div class="article-source-full">
           <div class="text text-h5">by <%= post.author %></div>
           <div class='text text-h5'>@<%= source %></div>
-          <!-- star -->
           <a href='/posts/destroy/<%= post.id%>' class='star'><i class="far fa-trash-alt"></i></a>
           <a href='/posts/star/<%= post.id%>' class=<%= post.star ? 'star-on' : 'star' %>><i class="fas fa-star"></i></a>
         </div>
         <div class='text text-article full-text'>
-          <%# text-start %>
           <%= post.text %>
-          <%# text-end %>
         </div>
       </div>
       <div class="divider"></div>

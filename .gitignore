@@ -28,4 +28,4 @@ yarn-error.log*
 /db/*.sqlite
 /public/assets*
 /tmp
-
+.byebug_history
