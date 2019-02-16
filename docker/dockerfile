@@ -1,4 +1,4 @@
-œ# Ubuntu system
+# Ubuntu system
 FROM ubuntu:latest
 LABEL Author='D-Mv'
 LABEL OS='Ubuntu'
