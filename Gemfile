@@ -6,13 +6,13 @@ gem 'hanami-model', '~> 1.3'
 
 # gem 'sqlite3'
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'nokogiri'
 
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun', platforms: :ruby
   gem 'hanami-webconsole'
-  gem 'nokogiri'
   gem 'pry-byebug'
   gem 'faraday'
   gem 'eat'
