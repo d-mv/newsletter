@@ -18,8 +18,8 @@ Hanami.configure do
       #  s
     #    adapter :sql, 'mysql://localhost/newsletter_development'
     #
-    # adapter :sql, ENV.fetch('DATABASE_URL')
-    adapter :sql, 'postgres://localhost/database'
+    adapter :sql, ENV.fetch('DATABASE_URL')
+    # adapter type: :sql, uri: 'postgres://localhost/database'
 
     ##
     # Migrations
