@@ -15,11 +15,11 @@ Hanami.configure do
     #
     #  * SQL adapter
     #    adapter :sql, 'sqlite://db/newsletter_development.sqlite3'
-      #  s
+    #
     #    adapter :sql, 'mysql://localhost/newsletter_development'
     #
-    adapter :sql, ENV.fetch('DATABASE_URL')
-    # adapter type: :sql, uri: 'postgres://localhost/database'
+    # adapter :sql, ENV.fetch('DATABASE_URL')
+    adapter :sql, uri: 'postgres://localhost/newsletter_development'
 
     ##
     # Migrations
