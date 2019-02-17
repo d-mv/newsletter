@@ -11,7 +11,6 @@ Hanami::Model.migration do
       column :star, TrueClass, default: false
       column :published, DateTime
       column :words, Integer
-      column :uid, Integer, unique: true
       column :status, TrueClass, default: true
       # auto-generated
       column :created_at, DateTime, null: false

@@ -25,17 +25,14 @@ Plenty of news readers, very colorful & heavy. Though most of them support 'read
 ## How?
 
 1. ~~HTML template~~
-2. Hanami + SQLite3 DB (in process)
-3. Working on bugs + setting v2 options
-4. v2
+2. ~~Hanami + SQLite3 DB~~
+3. Change to PostgreSQL
+4. Working on bugs + setting v2 options
+5. v2
 
 ## When?
 
-| Feb 1 | HMTL template                                                                                      |
-| ----- | -------------------------------------------------------------------------------------------------- |
-| Feb 3 | Hanami init + (header, float menu)                                                                 |
-| Feb 5 | Add new sources, parse (Medium only), show in the front                                            |
-| Feb 6 | Fixed security issues with external resources (Google Fonts, Font Awesome), post view, source name |
+in work...
 
 [add]: https://github.com/d-mv/newsletter/raw/master/screenshots/add.png 'Add source screenshot'
 [article]: https://github.com/d-mv/newsletter/raw/master/screenshots/article.png 'Article view screenshot'

@@ -33,7 +33,8 @@ class Parse
       process = ProcessArticle.new
 
       result = process.send method, el
-      array << result
+      array << result if result != {}
+
     end
     # binding.pry
     array

@@ -2,6 +2,7 @@
 node_modules
 /dist
 config.json
+start.sh
 
 # local env files
 .env.local

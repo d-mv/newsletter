@@ -22,6 +22,8 @@ class PostsRefresh
     # puts '+ loop sources'
     @sources.each do |el|
       # puts '+ start parse class'
+
+      puts el.url
       parsing = Parse.new(el.url)
       # puts '+ run parsing_collect_articles'
       articles = parsing.collect_articles
@@ -29,7 +31,7 @@ class PostsRefresh
       articles.each do |art|
         # puts @posts.find(art[:uid])
         art[:source_id] = el.id
-        check = @posts.find_by_uid(art[:uid]).to_a.size
+        check = @posts.find_by_url(art[:url]).to_a.size
 
         @posts.create(art) if check.zero?
         # binding.pry

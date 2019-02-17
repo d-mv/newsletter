@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# require 'pry-byebug'
 class PostRepository < Hanami::Repository
   associations do
     belongs_to :source
@@ -15,10 +14,8 @@ class PostRepository < Hanami::Repository
     posts.where(status: true)
   end
 
-  def find_by_uid(uid)
-    posts.where(uid: uid)
-    # binding.pry
-    # end
+  def find_by_url(url)
+    posts.where(url: url)
   end
 
   def sorted_new
@@ -27,12 +24,11 @@ class PostRepository < Hanami::Repository
 
   def destroy(id)
     posts = PostRepository.new
-    post = posts.update(id, title: '', text: '', url: '', author: '', star: false, words: '', status: false)
+    post = posts.update(id, title: '', text: '', author: '', star: false, words: 0, status: false)
   end
 
   def star(id)
     posts = PostRepository.new
-    # binding.pry
     post = if posts.find(id).star
              posts.update(id, star: false)
            else

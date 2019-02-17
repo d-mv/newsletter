@@ -8,6 +8,10 @@ class ProcessArticle
   # parsing medium
   def parse_medium(article)
     url = article.children.at('link').next_sibling.to_s
+    # check if exists
+    @posts = PostRepository.new
+    return {} if !@posts.find_by_url(url).to_a.size.zero?
+
     art_raw = Nokogiri::HTML(open(url).read)
     title = art_raw.children.at('title').text
     author = art_raw.children.at('meta[@property="author"]')['content']
@@ -16,8 +20,8 @@ class ProcessArticle
     words = art_raw.xpath('//p').text.split(' ').length
     # binding.pry
     # brief = art_raw.xpath('//p').text[0..1000]
-    uid = "#{published}-#{title}"
+    # uid = "#{published}-#{title}"
     puts url
-    { title: title, url: url, author: author, published: published, text: text, words: words, uid: uid}
+    { title: title, url: url, author: author, published: published, text: text, words: words}
   end
 end
