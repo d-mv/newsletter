@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'open-uri'
-require 'nokogiri'
-require 'pry-byebug'
+# require 'open-uri'
+# require 'nokogiri'
+# require 'pry-byebug'
 require_relative 'process_article'
 
 class Parse
