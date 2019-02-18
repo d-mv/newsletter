@@ -15,8 +15,10 @@ class Parse
   def fetch
     # binding.pry
     return false if @url == ''
+
     # binding.pry
-    @raw_html = Nokogiri::HTML(open(@url).read)
+    url_text = Net::HTTP.get(URI.parse @url)
+    @raw_html = Nokogiri::HTML(url_text)
     # binding.pry
   end
 
