@@ -3,6 +3,7 @@
 # require 'open-uri'
 # require 'nokogiri'
 # require 'pry-byebug'
+require 'net/http'
 require_relative 'process_article'
 
 class Parse
@@ -17,10 +18,18 @@ class Parse
     return false if @url == ''
 
     # binding.pry
-    url_text = Net::HTTP.new(URI.parse @url)
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-    @raw_html = Nokogiri::HTML(url_text)
+    # url_text = Net::HTTP.new(URI.parse @url)
+    # url_text.use_ssl = true
+    # url_text.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+# Net::HTTP.start(@url, 443, use_ssl: true)
+
+# http = Net::HTTP.start(@url, 443, use_ssl: true)
+# http.use_ssl = true
+# http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+    html = Net::HTTP.get(URI.parse @url)
+    @raw_html = Nokogiri::HTML(html)
     # binding.pry
   end
 
