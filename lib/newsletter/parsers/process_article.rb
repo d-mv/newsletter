@@ -3,6 +3,7 @@
 # require 'open-uri'
 # require 'nokogiri'
 # require 'pry-byebug'
+require 'net/http'
 
 class ProcessArticle
   # parsing medium
@@ -12,7 +13,7 @@ class ProcessArticle
     @posts = PostRepository.new
     return {} if !@posts.find_by_url(url).to_a.size.zero?
 
-    art_raw = Nokogiri::HTML(open(url).read)
+    art_raw = Nokogiri::HTML(Net::HTTP.get(URI.parse url))
     title = art_raw.children.at('title').text
     author = art_raw.children.at('meta[@property="author"]')['content']
     published = art_raw.children.at('meta[@property="article:published_time"]')['content']
