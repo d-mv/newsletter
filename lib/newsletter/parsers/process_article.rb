@@ -3,10 +3,9 @@
 require 'net/http'
 
 class ProcessArticle
-  # parsing medium
+
   def parse_medium(article)
     url = article.children.at('link').next_sibling.to_s
-    # check if exists
     @posts = PostRepository.new
     return {} unless @posts.find_by_url(url).to_a.size.zero?
 
