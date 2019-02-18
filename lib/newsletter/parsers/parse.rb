@@ -17,7 +17,9 @@ class Parse
     return false if @url == ''
 
     # binding.pry
-    url_text = Net::HTTP.get(URI.parse @url)
+    url_text = Net::HTTP.new(URI.parse @url)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     @raw_html = Nokogiri::HTML(url_text)
     # binding.pry
   end
