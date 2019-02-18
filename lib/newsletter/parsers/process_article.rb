@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-# require 'open-uri'
-# require 'nokogiri'
-# require 'pry-byebug'
 require 'net/http'
 
 class ProcessArticle
@@ -11,7 +8,7 @@ class ProcessArticle
     url = article.children.at('link').next_sibling.to_s
     # check if exists
     @posts = PostRepository.new
-    return {} if !@posts.find_by_url(url).to_a.size.zero?
+    return {} unless @posts.find_by_url(url).to_a.size.zero?
 
     art_raw = Nokogiri::HTML(Net::HTTP.get(URI.parse url))
     title = art_raw.children.at('title').text
@@ -19,9 +16,6 @@ class ProcessArticle
     published = art_raw.children.at('meta[@property="article:published_time"]')['content']
     text = art_raw.xpath('//p').text
     words = art_raw.xpath('//p').text.split(' ').length
-    # binding.pry
-    # brief = art_raw.xpath('//p').text[0..1000]
-    # uid = "#{published}-#{title}"
     puts url
     { title: title, url: url, author: author, published: published, text: text, words: words}
   end
