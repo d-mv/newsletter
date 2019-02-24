@@ -5,9 +5,16 @@
   padding: 20px 0;
 }
 
-.divider {
+.divider,
+.divider-spacer {
   border-bottom: 1px solid #a3a3a3;
-  margin: 0 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.divider-spacer {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .display-inb {
@@ -22,6 +29,11 @@
   padding-left: 5px;
 }
 
-.lh-custom{
+.lh-custom {
   line-height: 21.2px;
+}
+
+.center{
+  margin: 0 auto;
+  text-align:center;
 }
