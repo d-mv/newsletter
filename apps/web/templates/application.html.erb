@@ -8,6 +8,7 @@
     <title>The Newsletter</title>
     <!-- links -->
     <%= stylesheet 'main'%>
+    <%= stylesheet 'reset', 'application' %>
     <!-- imports -->
     <%= stylesheet 'https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700&amp;subset=latin-ext' %>
     <%# <%= stylesheet 'https://rsms.me/inter/inter.css' %>
@@ -17,15 +18,16 @@
   <body>
     <!-- header -->
     <div class='newsletter-head'>
-      <div class='text text-h1 page-title'>The Newsletter</div>
+      <div class='text text-h1 page-title' id='title'>The Newsletter</div>
       <div class='text text-h6' id='todayNow'></div>
     </div>
     <!-- content -->
     <%= yield %>
     <!-- float menu -->
+    <div class="float-menu-button" id='float-menu-button'>
+        <i class="fas fa-angle-left arrow-button"></i>
+    </div>
     <div class="float-menu" id='float-menu'>
-      <div class="float-menu-button">
-        <i class="fas fa-angle-left"></i></div>
       <a href="#top" class='float-a'>
         <div class='button text text-p'>Up</div>
       </a>
@@ -43,6 +45,7 @@
     <%# <%= javascript 'https://code.jquery.com/jquery-2.1.4.min.js', 'application' %>
     <%= javascript 'date' %>
     <%= javascript 'float' %>
+    <%= javascript 'title' %>
     <script></script>
   </body>
 </html>

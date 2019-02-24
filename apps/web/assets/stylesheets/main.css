@@ -12,3 +12,7 @@ body {
   font-family: 'Aleo',
     serif;
 }
+
+#title {
+  cursor: pointer;
+}

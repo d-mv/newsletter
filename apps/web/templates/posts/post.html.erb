@@ -8,10 +8,17 @@
           <div class='text text-h2'><%= post.title %></div>
         </div>
         <div class="article-source-full">
-          <div class="text text-h5">by <%= post.author %></div>
-          <a href='/sources/<%=post.source_id%>/posts' class='article-link'><span class='text text-h5'>from <%= source.name %><span></span></a>
-          <a href='/posts/destroy/<%= post.id%>' class='star'><i class="far fa-trash-alt"></i></a>
-          <a href='/posts/star/<%= post.id%>' class=<%= post.star ? 'star-on' : 'star' %>><i class="fas fa-star"></i></a>
+          <div class='article-by'>
+            <div class="text text-h5">by <%= post.author %></div>
+            <div class='pl2'></div>
+            <a href='/sources/<%=post.source_id%>/posts' class='article-link text text-h5'>
+              from <%= source.name %>
+            </a>
+          </div>
+          <div class='article-buttons'>
+            <a href='/posts/destroy/<%= post.id%>' class='star'><i class="far fa-trash-alt"></i></a>
+            <div class='pl15'></div>
+            <a href='/posts/star/<%= post.id%>' class=<%= post.star ? 'star-on' : 'star' %>><i class="fas fa-star"></i></a></div>
         </div>
         <div class='text text-article full-text'>
           <%= post.text %>

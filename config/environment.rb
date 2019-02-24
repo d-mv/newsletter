@@ -19,7 +19,6 @@ Hanami.configure do
     #    adapter :sql, 'mysql://localhost/newsletter_development'
     #
     adapter :sql, ENV.fetch('DATABASE_URL')
-
     ##
     # Migrations
     #

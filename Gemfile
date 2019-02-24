@@ -8,6 +8,7 @@ gem 'hanami-model', '~> 1.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'nokogiri'
 gem 'colorize'
+gem 'sass'
 
 group :development do
   # Code reloading

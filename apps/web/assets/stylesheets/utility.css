@@ -17,3 +17,11 @@
 .pl15 {
   padding-left: 15pt;
 }
+
+.pl2 {
+  padding-left: 5px;
+}
+
+.lh-custom{
+  line-height: 21.2px;
+}
