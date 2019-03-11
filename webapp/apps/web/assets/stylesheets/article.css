@@ -1,0 +1,29 @@
+.article-full {
+  margin: 0 auto;
+}
+
+.article-source-full {
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.article-by,
+.article-buttons {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  margin:0;
+  padding: 0;
+}
+
+.full-text {
+  padding: 10px 0;
+}
+
+.article-footer-full {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}

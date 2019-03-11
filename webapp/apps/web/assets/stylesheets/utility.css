@@ -1,0 +1,39 @@
+.button-space {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.divider,
+.divider-spacer {
+  border-bottom: 1px solid #a3a3a3;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.divider-spacer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.display-inb {
+  display: inline-block;
+}
+
+.pl15 {
+  padding-left: 15pt;
+}
+
+.pl2 {
+  padding-left: 5px;
+}
+
+.lh-custom {
+  line-height: 21.2px;
+}
+
+.center{
+  margin: 0 auto;
+  text-align:center;
+}
