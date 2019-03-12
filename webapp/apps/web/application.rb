@@ -231,8 +231,7 @@ module Web
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;
         object-src 'none';
-        plugin-types application/pdf;
-        child-src 'self';
+        worker-src 'self';
         frame-src 'self';
         media-src 'self';
         manifest-src 'self';
